@@ -106,7 +106,9 @@ while ejecutando:
     for i in range(4):
         fundacion_x = fundacion_x_base + i * (ancho_carta + espacio_horizontal_entre_pilas)
         if pilas_de_llegada[i]:
-            mostrar_imagen_carta(pantalla, (pilas_de_llegada[i][-1][0], pilas_de_llegada[i][-1][1], True), fundacion_x, fundacion_y) # Actualizado aquí
+
+            
+            mostrar_imagen_carta(pantalla, (pilas_de_llegada[i][-1][0], pilas_de_llegada[i][-1][1], True), fundacion_x, fundacion_y)
 
     pygame.display.flip()
 
